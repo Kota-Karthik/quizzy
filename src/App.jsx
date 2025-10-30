@@ -3,10 +3,13 @@ import { AnimatePresence } from "motion/react";
 import ThemeToggle from "./components/ThemeToggle";
 import StartScreen from "./components/StartScreen";
 import CategorySelect from "./components/CategorySelect";
+import QuizScreen from "./components/QuizScreen";
+import { quizData } from "./data/questions";
 
 function App() {
     const [currentScreen, setCurrentScreen] = useState("start");
     const [selectedCategory, setSelectedCategory] = useState("");
+    const [finalScore, setFinalScore] = useState(0);
 
     const handleStart = () => {
         setCurrentScreen("category");
@@ -15,6 +18,12 @@ function App() {
     const handleSelectCategory = (categoryId) => {
         setSelectedCategory(categoryId);
         setCurrentScreen("quiz");
+    };
+
+    const handleQuizComplete = (score) => {
+        setFinalScore(score);
+        setCurrentScreen("score");
+        
     };
 
     return (
@@ -32,7 +41,12 @@ function App() {
                     />
                 )}
 
-                
+                {currentScreen === "quiz" && (
+                    <QuizScreen
+                        questions={quizData[selectedCategory]}
+                        onComplete={handleQuizComplete}
+                    />
+                )}
             </AnimatePresence>
         </div>
     );

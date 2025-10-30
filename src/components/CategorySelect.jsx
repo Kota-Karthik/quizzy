@@ -90,7 +90,7 @@ export default function CategorySelect({ onSelectCategory }) {
                                     rounded-xl hover:shadow-xl transition-shadow duration-200 
                                     ${category.gradientClass} cursor-pointer
                                 `}
-                                onClick={onSelectCategory}>
+                                onClick={() => onSelectCategory(category.id)}>
                                 {category.icon}
                                 <span className="sm:text-lg font-medium">
                                     {category.name}
