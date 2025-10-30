@@ -1,7 +1,25 @@
 import { useState } from "react";
+import { AnimatePresence } from "motion/react";
+import ThemeToggle from "./components/ThemeToggle";
+import StartScreen from "./components/StartScreen";
 
 function App() {
-    return <></>;
+    const [currentScreen, setCurrentScreen] = useState("start");
+
+    const handleStart = () => {
+        setCurrentScreen("category");
+    };
+
+    return (
+        <div className="min-h-screen bg-linear-330 from-mint via-peach to-sky dark:from-slate-900 dark:via-slate-900 dark:to-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-500">
+            <ThemeToggle />
+            <AnimatePresence mode="wait">
+                {currentScreen === "start" && (
+                    <StartScreen key="start" onStart={handleStart} />
+                )}
+            </AnimatePresence>
+        </div>
+    );
 }
 
 export default App;
