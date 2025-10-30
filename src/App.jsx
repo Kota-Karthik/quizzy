@@ -6,9 +6,15 @@ import CategorySelect from "./components/CategorySelect";
 
 function App() {
     const [currentScreen, setCurrentScreen] = useState("start");
+    const [selectedCategory, setSelectedCategory] = useState("");
 
     const handleStart = () => {
         setCurrentScreen("category");
+    };
+
+    const handleSelectCategory = (categoryId) => {
+        setSelectedCategory(categoryId);
+        setCurrentScreen("quiz");
     };
 
     return (
@@ -20,8 +26,13 @@ function App() {
                 )}
 
                 {currentScreen === "category" && (
-                    <CategorySelect key="category" />
+                    <CategorySelect
+                        key="category"
+                        onSelectCategory={handleSelectCategory}
+                    />
                 )}
+
+                
             </AnimatePresence>
         </div>
     );

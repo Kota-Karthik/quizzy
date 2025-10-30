@@ -9,8 +9,8 @@ export default function StartScreen({ onStart }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="flex items-center justify-center min-h-screen px-4">
-            <Card className="max-w-lg w-full p-8 text-center space-y-6 shadow-xl rounded-2xl">
+            className="flex items-center justify-center min-h-screen p-4">
+            <Card className="max-w-lg w-full p-8 text-center space-y-6 shadow-xl">
                 {/* Icon Section */}
                 <motion.div
                     initial={{ scale: 0 }}
