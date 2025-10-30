@@ -1,16 +1,46 @@
-# React + Vite
+# Quizzy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, animated quiz app built with React and Vite. Choose a category, answer timed questions, and see your final score with smooth transitions and a clean UI.
 
-Currently, two official plugins are available:
+**Live demo**: [quizzy-pearl-theta.vercel.app](https://quizzy-pearl-theta.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+-   Category selection with curated question sets
+-   Per-question countdown timer and progress bar
+-   Animated question transitions
+-   Immediate correct/incorrect feedback
+-   Final score screen
+-   Light/Dark theme support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+-   React + Vite
+-   Motion (Framer Motion compatible) for animations
+-   Lucide icons
+-   Tailwind-style utility classes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
+2. Start the dev server:
+    ```bash
+    npm run dev
+    ```
+3. Build for production:
+    ```bash
+    npm run build
+    ```
+
+## Project Structure
+
+-   `src/components/` UI components like `StartScreen.jsx`, `QuizScreen.jsx`, `ScoreScreen.jsx`
+-   `src/data/questions.js` Question data grouped by category
+-   `src/App.jsx` App state and screen routing
+
+## License
+
+MIT
