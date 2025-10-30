@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AnimatePresence } from "motion/react";
 import ThemeToggle from "./components/ThemeToggle";
 import StartScreen from "./components/StartScreen";
+import CategorySelect from "./components/CategorySelect";
 
 function App() {
     const [currentScreen, setCurrentScreen] = useState("start");
@@ -16,6 +17,10 @@ function App() {
             <AnimatePresence mode="wait">
                 {currentScreen === "start" && (
                     <StartScreen key="start" onStart={handleStart} />
+                )}
+
+                {currentScreen === "category" && (
+                    <CategorySelect key="category" />
                 )}
             </AnimatePresence>
         </div>
