@@ -8,7 +8,7 @@ export default function QuizScreen({ questions, onComplete }) {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showFeedback, setShowFeedback] = useState(false);
     const [score, setScore] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(30);
+    const [timeLeft, setTimeLeft] = useState(10);
 
     const currentQuestion = questions[currentQuestionIndex];
     const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
@@ -49,7 +49,7 @@ export default function QuizScreen({ questions, onComplete }) {
             setTimeout(() => {
                 setCurrentQuestionIndex((prev) => prev + 1);
                 setSelectedAnswer(null);
-                setTimeLeft(30);
+                setTimeLeft(10);
                 setShowFeedback(false);
             }, 1000);
         } else {

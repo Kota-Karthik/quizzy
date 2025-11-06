@@ -1,5 +1,5 @@
 export const quizData = {
-    technology: [
+    Environment_management: [
         {
             id: 1,
             question: "Who is known as the father of the computer?",
@@ -43,7 +43,7 @@ export const quizData = {
         },
     ],
 
-    art: [
+    CD_auto_discovery: [
         {
             id: 6,
             question: "Who painted the Mona Lisa?",
@@ -85,7 +85,7 @@ export const quizData = {
         },
     ],
 
-    geography: [
+    Customisable_Catalog_table: [
         {
             id: 10,
             question: "What is the largest continent in the world?",
@@ -130,7 +130,7 @@ export const quizData = {
         },
     ],
 
-    sports: [
+    Workflow_execution_enhancements: [
         {
             id: 16,
             question: "In which sport is the term 'love' used?",
@@ -176,7 +176,7 @@ export const quizData = {
         },
     ],
 
-    history: [
+    Scorecard_Advanced_checks: [
         {
             id: 22,
             question: "Who was the first President of the United States?",
@@ -224,7 +224,7 @@ export const quizData = {
         },
     ],
 
-    music: [
+    IDP_AI_powered_Knowledge_Agent: [
         {
             id: 27,
             question: "Who is known as the 'King of Pop'?",

@@ -22,21 +22,31 @@ export default function StartScreen({ onStart }) {
                 </motion.div>
 
                 {/* Title */}
-                <motion.h1
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 }}
-                    className="text-2xl sm:text-3xl font-semibold tracking-tight">
-                    Quizzy
-                </motion.h1>
-
+                {/* Title Section */}
+                <div className="space-y-2">
+                    <motion.h1
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                        className="text-2xl sm:text-3xl font-bold tracking-tight bg-gradient-to-r from-teal-500 to-orange-400 bg-clip-text text-transparent">
+                        IDP Quiz
+                    </motion.h1>
+                    <motion.div
+                        initial={{ opacity: 0, y: 5 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4 }}
+                        className="flex justify-center items-center space-x-1">
+                        <span className="text-sm text-slate-500 dark:text-slate-400 font-medium">by</span>
+                        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300">IDP Custom Plugin</span>
+                    </motion.div>
+                </div>
                 {/* Description */}
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 }}
                     className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                    Test your knowledge across various categories. Challenge
+                    Test your knowledge across various IDP features. Challenge
                     yourself and see how well you score!
                 </motion.p>
 
