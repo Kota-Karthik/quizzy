@@ -42,7 +42,7 @@ export default function CategorySelect({ onSelectCategory }) {
                 </motion.p>
 
                 {/* Grid of categories */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                <div className="flex justify-center mt-6">
                     {categories.map((category, index) => (
                         <motion.div
                             key={category.id}
