@@ -51,6 +51,6 @@ export const quizData = {
             options: ["Manual surveys", "Built-in adoption dashboard", "External analytics tools", "Audit logs only"],
             answer: "Built-in adoption dashboard",
             demoPoint: "Show the adoption metrics and usage statistics"
-        },
+        }
     ],
 };

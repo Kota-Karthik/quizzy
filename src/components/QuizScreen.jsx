@@ -8,7 +8,7 @@ export default function QuizScreen({ questions, onComplete }) {
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [showFeedback, setShowFeedback] = useState(false);
     const [score, setScore] = useState(0);
-    const [timeLeft, setTimeLeft] = useState(10);
+    const [timeLeft, setTimeLeft] = useState(15);
 
     const currentQuestion = questions[currentQuestionIndex];
     const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
@@ -49,7 +49,7 @@ export default function QuizScreen({ questions, onComplete }) {
             setTimeout(() => {
                 setCurrentQuestionIndex((prev) => prev + 1);
                 setSelectedAnswer(null);
-                setTimeLeft(10);
+                setTimeLeft(15);
                 setShowFeedback(false);
             }, 1000);
         } else {
@@ -175,6 +175,9 @@ export default function QuizScreen({ questions, onComplete }) {
                                 ? "Next Question"
                                 : "Finish Quiz"}
                         </button>
+                        <div className="text-center text-sm text-slate-500 dark:text-slate-400 mt-4 pr-2">
+                            Made with ❤️ by IDP knowledge assistant
+                        </div>
                     </motion.div>
                 </AnimatePresence>
             </Card>
