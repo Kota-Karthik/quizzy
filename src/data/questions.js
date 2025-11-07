@@ -1,282 +1,56 @@
 export const quizData = {
-    Environment_management: [
+    Internal_Developer_Portal: [
         {
             id: 1,
-            question: "Who is known as the father of the computer?",
+            question: "Software Catalog Management\nScenario: You're a developer who needs to find information about a microservice called 'payment-service' in your organization.\nWhich IDP feature would you use to discover this service and its documentation?",
             options: [
-                "Alan Turing",
-                "Charles Babbage",
-                "Bill Gates",
-                "John von Neumann",
+                "Workflows",
+                "Software Catalog",
+                "Scorecards",
+                "Audit Trail",
             ],
-            answer: "Charles Babbage",
+            answer: "Software Catalog",
+            demoPoint: "Show how to search and explore entities in the Software Catalog"
         },
         {
             id: 2,
-            question: "What does CPU stand for?",
+            question: "Self-Service Workflows\nScenario: Your team frequently needs to create new microservices with the same boilerplate code and configuration.\nWhat IDP feature can automate this repetitive process?",
             options: [
-                "Central Process Unit",
-                "Central Processing Unit",
-                "Computer Personal Unit",
-                "Central Processor Utility",
+                "Scorecards",
+                "Developer Dashboard",
+                "Self Service Workflows",
+                "RBAC",
             ],
-            answer: "Central Processing Unit",
+            answer: "Self Service Workflows",
+            demoPoint: "Demonstrate creating or executing a workflow template"
         },
         {
             id: 3,
-            question:
-                "Which programming language is primarily used for web development?",
-            options: ["Python", "C++", "JavaScript", "Java"],
-            answer: "JavaScript",
+            question: "Service Health Monitoring\nScenario: You want to quickly check the deployment status and health of services you own.\nWhere in IDP would you find this information at a glance?",
+            options: ["Software Catalog", "Workflows page", "Developer-Centric Dashboard", "Audit Trail"],
+            answer: "Developer-Centric Dashboard",
+            demoPoint: "Show the personalized dashboard with service health metrics"
         },
         {
             id: 4,
-            question: "Who founded Microsoft?",
-            options: ["Steve Jobs", "Bill Gates", "Elon Musk", "Larry Page"],
-            answer: "Bill Gates",
+            question: "Quality and Compliance Tracking\nScenario: Your organization wants to track which services have proper documentation, security scans, and follow coding standards.\nWhich IDP feature helps measure and track these organizational metrics?",
+            options: ["Workflows", "Scorecards and Checks", "Software Catalog", "RBAC"],
+            answer: "Scorecards and Checks",
+            demoPoint: "Display scorecard results and check statuses for different services"
         },
         {
             id: 5,
-            question: "What year was the first iPhone released?",
-            options: ["2005", "2007", "2008", "2009"],
-            answer: "2007",
+            question: "Access Control\nScenario: You need to ensure that only certain team members can execute critical workflows or modify specific catalog entities.\nWhat IDP capability manages these permissions?",
+            options: ["Audit Trail", "Scorecards", "Role-Based Access Control (RBAC)", "Developer Dashboard"],
+            answer: "Role-Based Access Control (RBAC)",
+            demoPoint: "Show permission settings and role assignments"
         },
-    ],
-
-    CD_auto_discovery: [
         {
             id: 6,
-            question: "Who painted the Mona Lisa?",
-            options: [
-                "Vincent van Gogh",
-                "Leonardo da Vinci",
-                "Pablo Picasso",
-                "Claude Monet",
-            ],
-            answer: "Leonardo da Vinci",
-        },
-        {
-            id: 7,
-            question: "What art style is Pablo Picasso famous for?",
-            options: ["Surrealism", "Cubism", "Impressionism", "Expressionism"],
-            answer: "Cubism",
-        },
-        {
-            id: 8,
-            question: "The Starry Night is an artwork by which painter?",
-            options: [
-                "Claude Monet",
-                "Salvador Dalí",
-                "Vincent van Gogh",
-                "Paul Cézanne",
-            ],
-            answer: "Vincent van Gogh",
-        },
-        {
-            id: 9,
-            question: "Which museum houses the Mona Lisa?",
-            options: [
-                "Louvre Museum",
-                "British Museum",
-                "Metropolitan Museum of Art",
-                "Uffizi Gallery",
-            ],
-            answer: "Louvre Museum",
-        },
-    ],
-
-    Customisable_Catalog_table: [
-        {
-            id: 10,
-            question: "What is the largest continent in the world?",
-            options: ["Asia", "Africa", "Europe", "North America"],
-            answer: "Asia",
-        },
-        {
-            id: 11,
-            question: "Which country has the longest coastline?",
-            options: ["Australia", "Canada", "Russia", "Indonesia"],
-            answer: "Canada",
-        },
-        {
-            id: 12,
-            question:
-                "Mount Everest lies on the border of which two countries?",
-            options: [
-                "China and India",
-                "Nepal and China",
-                "India and Nepal",
-                "China and Bhutan",
-            ],
-            answer: "Nepal and China",
-        },
-        {
-            id: 13,
-            question: "What is the smallest country in the world?",
-            options: ["Monaco", "Vatican City", "Liechtenstein", "San Marino"],
-            answer: "Vatican City",
-        },
-        {
-            id: 14,
-            question: "Which river flows through Baghdad?",
-            options: ["Euphrates", "Tigris", "Jordan", "Nile"],
-            answer: "Tigris",
-        },
-        {
-            id: 15,
-            question: "Which desert is the largest in the world?",
-            options: ["Gobi", "Sahara", "Kalahari", "Antarctic"],
-            answer: "Antarctic",
-        },
-    ],
-
-    Workflow_execution_enhancements: [
-        {
-            id: 16,
-            question: "In which sport is the term 'love' used?",
-            options: ["Tennis", "Badminton", "Cricket", "Volleyball"],
-            answer: "Tennis",
-        },
-        {
-            id: 17,
-            question:
-                "How many players are there in a football (soccer) team on the field?",
-            options: ["9", "10", "11", "12"],
-            answer: "11",
-        },
-        {
-            id: 18,
-            question: "Which country hosted the 2016 Summer Olympics?",
-            options: ["China", "Brazil", "Japan", "UK"],
-            answer: "Brazil",
-        },
-        {
-            id: 19,
-            question:
-                "Who has won the most Grand Slam titles in tennis (men’s)?",
-            options: [
-                "Novak Djokovic",
-                "Roger Federer",
-                "Rafael Nadal",
-                "Pete Sampras",
-            ],
-            answer: "Novak Djokovic",
-        },
-        {
-            id: 20,
-            question: "What sport uses a puck?",
-            options: ["Hockey", "Baseball", "Basketball", "Rugby"],
-            answer: "Hockey",
-        },
-        {
-            id: 21,
-            question: "In basketball, how many points is a free throw worth?",
-            options: ["1", "2", "3", "4"],
-            answer: "1",
-        },
-    ],
-
-    Scorecard_Advanced_checks: [
-        {
-            id: 22,
-            question: "Who was the first President of the United States?",
-            options: [
-                "Abraham Lincoln",
-                "George Washington",
-                "Thomas Jefferson",
-                "John Adams",
-            ],
-            answer: "George Washington",
-        },
-        {
-            id: 23,
-            question: "When did World War II end?",
-            options: ["1942", "1945", "1948", "1950"],
-            answer: "1945",
-        },
-        {
-            id: 24,
-            question: "Which empire built the Colosseum?",
-            options: ["Greek", "Roman", "Byzantine", "Ottoman"],
-            answer: "Roman",
-        },
-        {
-            id: 25,
-            question: "Who discovered America in 1492?",
-            options: [
-                "Christopher Columbus",
-                "Vasco da Gama",
-                "Ferdinand Magellan",
-                "Marco Polo",
-            ],
-            answer: "Christopher Columbus",
-        },
-        {
-            id: 26,
-            question: "What wall divided East and West Berlin until 1989?",
-            options: [
-                "Berlin Wall",
-                "Iron Curtain",
-                "Western Barrier",
-                "Freedom Wall",
-            ],
-            answer: "Berlin Wall",
-        },
-    ],
-
-    IDP_AI_powered_Knowledge_Agent: [
-        {
-            id: 27,
-            question: "Who is known as the 'King of Pop'?",
-            options: [
-                "Prince",
-                "Michael Jackson",
-                "Elvis Presley",
-                "Freddie Mercury",
-            ],
-            answer: "Michael Jackson",
-        },
-        {
-            id: 28,
-            question: "Which band released 'Bohemian Rhapsody'?",
-            options: ["The Beatles", "Queen", "Pink Floyd", "Led Zeppelin"],
-            answer: "Queen",
-        },
-        {
-            id: 29,
-            question: "Which musical instrument has keys, pedals, and strings?",
-            options: ["Harp", "Piano", "Guitar", "Violin"],
-            answer: "Piano",
-        },
-        {
-            id: 30,
-            question: "Who composed the famous 'Fur Elise'?",
-            options: ["Beethoven", "Mozart", "Bach", "Tchaikovsky"],
-            answer: "Beethoven",
-        },
-        {
-            id: 31,
-            question:
-                "What genre of music is Taylor Swift primarily known for?",
-            options: ["Pop", "Rock", "Country", "Jazz"],
-            answer: "Pop",
-        },
-        {
-            id: 32,
-            question: "Which singer is known as the 'Queen of Soul'?",
-            options: [
-                "Whitney Houston",
-                "Aretha Franklin",
-                "Diana Ross",
-                "Beyoncé",
-            ],
-            answer: "Aretha Franklin",
-        },
-        {
-            id: 33,
-            question: "Which band was John Lennon part of?",
-            options: ["The Rolling Stones", "The Beatles", "Oasis", "U2"],
-            answer: "The Beatles",
+            question: "Platform Adoption\nHow can platform administrators track how well teams are adopting and using the IDP?",
+            options: ["Manual surveys", "Built-in adoption dashboard", "External analytics tools", "Audit logs only"],
+            answer: "Built-in adoption dashboard",
+            demoPoint: "Show the adoption metrics and usage statistics"
         },
     ],
 };

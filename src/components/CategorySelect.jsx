@@ -5,41 +5,11 @@ import Card from "./ui/Card";
 // Define all categories for the quiz
 const categories = [
     {
-        id: "Environment_management",
-        name: "Environment management",
+        id: "Internal_Developer_Portal",
+        name: "Internal Developer Portal",
         icon: <Code className="w-8 h-8" />,
         gradientClass: "bg-linear-330 from-cyan-500 to-teal-500",
-    },
-    {
-        id: "CD_auto_discovery",
-        name: "CD auto-discovery",
-        icon: <Palette className="w-8 h-8" />,
-        gradientClass: "bg-linear-330 from-purple-400 to-pink-400",
-    },
-    {
-        id: "Customisable_Catalog_table",
-        name: "Customisable Catalog table",
-        icon: <Globe className="w-8 h-8" />,
-        gradientClass: "bg-linear-330 from-green-500 to-green-400",
-    },
-    {
-        id: "Workflow_execution_enhancements",
-        name: "Workflow execution enhancements",
-        icon: <Trophy className="w-8 h-8" />,
-        gradientClass: "bg-linear-330 from-orange-400 to-orange-500",
-    },
-    {
-        id: "Scorecard_Advanced_checks",
-        name: "Scorecard & Advanced checks",
-        icon: <BookOpen className="w-8 h-8" />,
-        gradientClass: "bg-linear-330 from-yellow-400 to-yellow-300",
-    },
-    {
-        id: "IDP_AI_powered_Knowledge_Agent",
-        name: "IDP AI powered Knowledge Agent",
-        icon: <Music className="w-8 h-8" />,
-        gradientClass: "bg-linear-330 from-indigo-400 to-purple-400",
-    },
+    }
 ];
 
 export default function CategorySelect({ onSelectCategory }) {
