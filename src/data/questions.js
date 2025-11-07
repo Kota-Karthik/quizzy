@@ -26,9 +26,9 @@ export const quizData = {
         },
         {
             id: 3,
-            question: "Service Health Monitoring\nScenario: You want to quickly check the deployment status and health of services you own.\nWhere in IDP would you find this information at a glance?",
-            options: ["Software Catalog", "Workflows page", "Developer-Centric Dashboard", "Audit Trail"],
-            answer: "Developer-Centric Dashboard",
+            question: "Which two modules of Harness is used by SSEM in IDP",
+            options: ["CD and IACM", "CI and CD", "STO and CI", "IACM and STO"],
+            answer: "CD and IACM",
             demoPoint: "Show the personalized dashboard with service health metrics"
         },
         {
